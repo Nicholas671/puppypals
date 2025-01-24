@@ -1,0 +1,6 @@
+body {
+    background: linear-gradient(rgb(160, 255, 196), rgb(73, 94, 56));
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+}

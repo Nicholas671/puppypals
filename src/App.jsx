@@ -10,7 +10,7 @@ function App() {
   console.log(featuredPup);
 
   return (
-    <div >
+    <div className={styles['appContainer']}>
       <div className={styles['puppy-list']}>
         <h1>Puppy Pals</h1>
         <h2>Click on a puppy to see more info</h2>
@@ -23,8 +23,7 @@ function App() {
             {puppy.name}
           </p>
         ))}
-      </div >
-      {featPupId && (
+      </div > {featPupId && (
         <div className={styles['featured']}>
           <h2>{featuredPup.name}</h2>
           <ul>
@@ -36,8 +35,9 @@ function App() {
             </li>
           </ul>
         </div>
-      )}
-    </div>
+      )}</div>
+
+
   );
 }
 
